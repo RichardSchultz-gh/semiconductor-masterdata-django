@@ -16,8 +16,7 @@ Model `Lot` als Gegenstück zu `mapper.py:20`, im Admin prüfbar, mit den 1000 L
 - [x] Migration erzeugen, mit `sqlmigrate` prüfen, anwenden
 - [x] Superuser anlegen, Model im Admin registrieren
 - [x] `LotAdmin` mit `list_display`, `list_filter`, `search_fields`
-- [ ] `"product"` in `list_filter` ergänzen
-- [ ] Settings: `LANGUAGE_CODE = 'de-de'`, `TIME_ZONE = 'Europe/Berlin'`
+- [ ] Optional: Settings `LANGUAGE_CODE = 'de-de'`, `TIME_ZONE = 'Europe/Berlin'` (bewusst offen gelassen)
 - [ ] Erster Commit (vorher prüfen, dass `db.sqlite3` nicht getrackt wird)
 - [ ] Management-Command `import_lots` für `LOT.csv`
 - [ ] Commit
@@ -33,4 +32,4 @@ Model `Lot` als Gegenstück zu `mapper.py:20`, im Admin prüfbar, mit den 1000 L
 
 ## Fertig, wenn
 
-Die 1000 Lose erscheinen im Admin und lassen sich nach State, Kunde, Produkt und Fälligkeit filtern.
+Die 1000 Lose erscheinen im Admin und lassen sich nach State, Kunde und Fälligkeit filtern.
