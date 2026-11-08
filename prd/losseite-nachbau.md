@@ -42,6 +42,7 @@ Repo `~/semiconductor-logistics-automation`:
 3. [Template, Liste und Filter](../issues/03-template-und-filter.md)
 4. [Rollen und Rechte](../issues/04-rollen.md)
 5. [README, Veröffentlichung, Anschreiben](../issues/05-readme-und-veroeffentlichen.md)
+6. [Tests](../issues/06-tests.md)
 
 Priorität bei Zeitmangel: Teil 2 ist am wichtigsten, weil genau das im Anschreiben steht. Teil 3 und 4 dürfen schlanker ausfallen. Ein kleines, sauberes Repo ist besser als ein großes, halb fertiges.
 
