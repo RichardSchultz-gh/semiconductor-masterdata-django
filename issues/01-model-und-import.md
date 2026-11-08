@@ -16,10 +16,10 @@ Model `Lot` als Gegenstück zu `mapper.py:20`, im Admin prüfbar, mit den 1000 L
 - [x] Migration erzeugen, mit `sqlmigrate` prüfen, anwenden
 - [x] Superuser anlegen, Model im Admin registrieren
 - [x] `LotAdmin` mit `list_display`, `list_filter`, `search_fields`
-- [ ] Optional: Settings `LANGUAGE_CODE = 'de-de'`, `TIME_ZONE = 'Europe/Berlin'` (bewusst offen gelassen)
-- [ ] Erster Commit (vorher prüfen, dass `db.sqlite3` nicht getrackt wird)
-- [ ] Management-Command `import_lots` für `LOT.csv`
-- [ ] Commit
+- [x] Optional: Settings `LANGUAGE_CODE = 'de-de'`, `TIME_ZONE = 'Europe/Berlin'` (nötig, damit `make_aware` die CSV-Zeiten als Berliner Zeit liest)
+- [x] Erster Commit (vorher prüfen, dass `db.sqlite3` nicht getrackt wird)
+- [x] Management-Command `import_lots` für `LOT.csv`
+- [x] Commit
 
 ## Hinweise zum Import
 
