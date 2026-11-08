@@ -8,14 +8,14 @@ Ein Los lässt sich auf einer eigenen Seite bearbeiten. Die ModelForm ersetzt di
 
 ## Checkliste
 
-- [ ] `forms.py` in der App mit einer ModelForm für `Lot`
-- [ ] Entscheiden, welche Felder bearbeitbar sind (`lotid` beim Bearbeiten nicht änderbar, wie `readonly` im Original)
-- [ ] URL-Konfiguration der App anlegen und in `mysite/urls.py` einbinden
-- [ ] View: Los laden (404, wenn es nicht existiert), Formular bei GET anzeigen, bei POST validieren und speichern
-- [ ] Template mit Formular, CSRF-Token, Fehlermeldungen
-- [ ] Nach erfolgreichem Speichern weiterleiten (Post/Redirect/Get)
+- [x] `forms.py` in der App mit einer ModelForm für `Lot`
+- [x] Entscheiden, welche Felder bearbeitbar sind (`lotid` beim Bearbeiten nicht änderbar, wie `readonly` im Original)
+- [x] URL-Konfiguration der App anlegen und in `mysite/urls.py` einbinden
+- [x] View: Los laden (404, wenn es nicht existiert), Formular bei GET anzeigen, bei POST validieren und speichern
+- [x] Template mit Formular, CSRF-Token, Fehlermeldungen
+- [x] Nach erfolgreichem Speichern weiterleiten (Post/Redirect/Get)
 - [ ] Optional: `clean()` für die Anmerkung aus `docs/test/Bugtracker.adoc:34` (z. B. INIT ohne `enteroper`/`procstart`, PROC nur mit `procstart`)
-- [ ] Commit
+- [x] Commit
 
 ## Vergleichen und notieren (für Anschreiben und README)
 
