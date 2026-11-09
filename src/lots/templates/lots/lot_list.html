@@ -1,0 +1,45 @@
+<h1>Lose</h1>
+
+
+
+
+
+<form method="get">
+	<input name="lotid" value="{{ lotid}}" placeholder="Lot-ID">
+	<select name="state">
+		<option value="">alle</option>
+		{% for value, label in states %}
+			<option value="{{ value }}" {% if value == state%}selected{% endif %}>{{ label }}</option>
+		{% endfor %}
+	</select>
+	<button type="submit">Filtern</button>
+</form>
+
+<table>
+	<thead>
+		<tr>
+			<th>Lot-ID</th>
+			<th>State</th>
+			<th>Priorität</th>
+			<th>Stück</th>
+			<th>Produkt</th>
+			<th>Kunde</th>
+			<th>Fällig</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for lot in lots %}
+			<tr>
+				<td><a href="{% url 'lots:lot_edit' lotid=lot.lotid %}">{{ lot.lotid}}</a></td>
+				<td>{{ lot.get_state_display }}</td>
+				<td>{{ lot.priority }}</td>
+				<td>{{ lot.pieces }}</td>
+				<td>{{ lot.product }}</td>
+				<td>{{ lot.customer }}</td>
+				<td>{{ lot.duedate }}</td>
+			</tr>
+		{% empty %}
+			<tr><td colspan="7">Keine Lose gefunden.</td></tr>
+		{% endfor %}
+	</tbody>
+</table>

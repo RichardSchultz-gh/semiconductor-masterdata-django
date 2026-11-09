@@ -8,14 +8,14 @@ Eigene Losliste als Gegenstück zu `Stammdaten_Los.html`, mit Filter nach Lot-ID
 
 ## Checkliste
 
-- [ ] View für die Liste
-- [ ] Template mit Tabelle (Spalten wie im Admin oder Original)
-- [ ] Filterformular per GET (Lot-ID, State); State-Auswahl aus `Lot.State`, nicht von Hand getippt
-- [ ] Filter im View über ein QuerySet, das schrittweise eingeschränkt wird (Field Lookups)
-- [ ] Link von jeder Zeile zur Bearbeiten-Seite aus Teil 2
+- [x] View für die Liste
+- [x] Template mit Tabelle (Spalten wie im Admin oder Original)
+- [x] Filterformular per GET (Lot-ID, State); State-Auswahl aus `Lot.State`, nicht von Hand getippt
+- [x] Filter im View über ein QuerySet, das schrittweise eingeschränkt wird (Field Lookups)
+- [x] Link von jeder Zeile zur Bearbeiten-Seite aus Teil 2
 - [ ] Optional: Sortierung über die URL (serverseitig) oder per JS wie im Original
 - [ ] Optional: Basis-Template, von dem Liste und Bearbeiten-Seite erben
-- [ ] Commit
+- [x] Commit
 
 ## Fertig, wenn
 

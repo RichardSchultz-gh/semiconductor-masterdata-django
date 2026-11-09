@@ -16,3 +16,20 @@ def lot_edit(request, lotid):
 
     return render(request, "lots/lot_edit.html", {"lot": lot, "form": form})
 
+def lot_list(request):
+    lots = Lot.objects.all()
+    
+    lotid = request.GET.get("lotid", "").strip()
+    state = request.GET.get("state", "")
+
+    if lotid:
+        lots = lots.filter(lotid__icontains=lotid)
+    if state:
+        lots = lots.filter(state=state)
+
+    return render(request, "lots/lot_list.html", {
+        "lots": lots,
+        "lotid": lotid,
+        "states": Lot.State.choices,
+        "state": state,
+    })
