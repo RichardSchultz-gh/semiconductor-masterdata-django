@@ -15,7 +15,7 @@ Ein paar kleine automatische Tests zeigen, dass Import, Validierung und Rechte f
 - [ ] Form: ungültiger State und Buchstaben bei `priority` → `is_valid()` ist `False`, Fehler am richtigen Feld
 - [ ] View: POST mit gültigen Daten speichert und leitet weiter, unbekannte Lot-ID → 404
 - [ ] Optional (nach 04): Mitarbeiter ruft die Bearbeiten-URL auf → 403, Fertigungsleiter → 200
-- [ ] Tests laufen mit `uv run src/manage.py test lots`, Befehl im README erwähnen
+- [ ] Tests laufen mit `python src/manage.py test lots`, Befehl im README erwähnen
 - [ ] Commit
 
 ## Hinweise
@@ -25,4 +25,4 @@ Ein paar kleine automatische Tests zeigen, dass Import, Validierung und Rechte f
 
 ## Fertig, wenn
 
-`uv run src/manage.py test lots` läuft grün und deckt mindestens Import und Form ab.
+`python src/manage.py test lots` läuft grün und deckt mindestens Import und Form ab.

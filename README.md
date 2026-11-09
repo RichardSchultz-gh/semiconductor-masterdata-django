@@ -43,19 +43,20 @@ Die Planung liegt in [`prd/`](prd/) und [`issues/`](issues/).
 
 ## Installation und Start
 
-Voraussetzungen: Python 3.14 und [uv](https://docs.astral.sh/uv/). Alle Befehle im Repo-Root ausführen.
+Voraussetzungen: Python 3.12 oder neuer (entwickelt mit 3.14). Alle Befehle im Repo-Root ausführen.
 
 ```bash
 git clone https://github.com/RichardSchultz-gh/semiconductor-masterdata-django.git
 cd semiconductor-masterdata-django
 
-uv venv
-uv pip install -r requirements.txt
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
 
-uv run src/manage.py migrate
-uv run src/manage.py import_lots src/lots/testdata/LOT.csv
-uv run src/manage.py createsuperuser
-uv run src/manage.py runserver
+python src/manage.py migrate
+python src/manage.py import_lots src/lots/testdata/LOT.csv
+python src/manage.py createsuperuser
+python src/manage.py runserver
 ```
 
 Danach:
