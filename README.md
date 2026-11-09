@@ -46,8 +46,8 @@ Die Planung liegt in [`prd/`](prd/) und [`issues/`](issues/).
 Voraussetzungen: Python 3.14 und [uv](https://docs.astral.sh/uv/). Alle Befehle im Repo-Root ausführen.
 
 ```bash
-git clone https://github.com/RichardSchultz-gh/frauholle-django.git
-cd frauholle-django
+git clone https://github.com/RichardSchultz-gh/semiconductor-masterdata-django.git
+cd semiconductor-masterdata-django
 
 uv venv
 uv pip install -r requirements.txt
